@@ -1,0 +1,16 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "simple express app ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "heychessy",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.1",
+    "nodemon": "^1.18.9"
+  }
+}

@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  mongo-db:
+    image: mongo
+    restart: 'on-failure'
+  express-app:
+      build: ./express-app
+      volumes:
+        - ./express-app:/usr/src/app
+      ports:
+        - 3030:8080
+      depends_on:
+        - mongo-db      
+        
